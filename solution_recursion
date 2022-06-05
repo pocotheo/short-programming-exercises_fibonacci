@@ -1,0 +1,15 @@
+int fibonacci(int n) {
+  if (n <=2) {
+    return 1;}
+  else {
+    return fibonacci(n - 2) + fibonacci (n - 1);
+  }
+  }
+ 
+main() {
+  String output = "";
+  for (int i = 1; i <= 16; ++i) {
+    output += fibonacci(i).toString() + ", ";
+  }
+  print(output + "...");
+}
